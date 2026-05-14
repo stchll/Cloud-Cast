@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CloudCast</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="blur-effect"></div>
+
+        <div class="weather-card">
+            <div class="top-bar">
+                <div class="input-box">
+                    <input type="text" id="cityInput" placeholder="Search for a city!"
+                        autocomplete="off">
+
+                    <button id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="weather-content" style="display: none
+            ;">
+                <div class="place-info">
+                    <div>
+                        <h1 id="cityName">Lviv</h1>
+                    </div>
+
+                    <img id="countryFlag" src="https://flagsapi.com/UA/flat/64.png" />
+                </div>
+
+                <div class="main-weather">
+                    <h2 id="temperature">67°C</h2>
+                </div>
+
+                <div class="weather-stats">
+                    <div class="stat-box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div>
+                            <p>Humidity</p>
+                            <span id="humidity">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <p>Wind</p>
+                            <span id="wind">0km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
