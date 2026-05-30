@@ -27,8 +27,8 @@ async function fetchWeather(city) {
         const data = await response.json()
 
         if (data.cod !== 200) {
-            alert('Денчік такого не знає')
-            
+            alert('Unknown city!')
+
             return
         }
 
